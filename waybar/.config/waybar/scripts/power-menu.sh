@@ -16,16 +16,16 @@ selected=$(printf '󰐥  Apagar\n󰜉  Reiniciar\n󰍃  Cerrar sesión\n󰌾  Bl
 )
 
 case "$selected" in
-    *Apagar*)
+    *"Apagar"*)
         systemctl poweroff
         ;;
-    *Reiniciar*)
+    *"Reiniciar"*)
         systemctl reboot
         ;;
     *"Cerrar sesión"*)
         hyprctl dispatch exit
         ;;
-    *Bloquear*)
+    *"Bloquear"*)
         hyprlock
         ;;
 esac
