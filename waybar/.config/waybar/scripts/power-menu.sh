@@ -23,7 +23,7 @@ case "$selected" in
         systemctl reboot
         ;;
     *"Cerrar sesión"*)
-        hyprctl dispatch exit
+        hyprctl dispatch 'hl.dsp.exit()'
         ;;
     *"Bloquear"*)
         hyprlock
