@@ -20,6 +20,11 @@ hl.config({
     },
 })
 
+## Instalar locales
+locale -a 
+sudo vim /etc/locale.gen
+sudo locale-gen
+
 ## Evitar parpadeo de teclado en hardware antiguo
 hl.config({
     cursor = {
