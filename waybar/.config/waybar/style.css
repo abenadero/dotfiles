@@ -60,7 +60,8 @@ menu menuitem:hover {
 #memory,
 #tray,
 #clock,
-#custom-power {
+#custom-power,
+#custom-ycal {
     color: @text;
     padding: 2px 6px;
     margin: 2px 2px;    
@@ -74,6 +75,7 @@ menu menuitem:hover {
 #memory:hover,
 #tray:hover,
 #clock:hover,
+#custom-ycal:hover,
 #custom-power:hover {
     color: @rosewater;
     background-color: alpha(@teal, 0.55);
@@ -120,7 +122,7 @@ menu menuitem:hover {
 
 /* ---------- clock ---------- */
 
-#clock {
+#clock, #custom-ycal {
     color: @text;
 	/*border-radius: 5px;
 	border: 0.5px solid @teal;
