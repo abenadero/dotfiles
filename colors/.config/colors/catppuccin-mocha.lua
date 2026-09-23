@@ -18,7 +18,7 @@ return {
     mauve     = "rgb(cba6f7)",
     lavender  = "rgb(b4befe)",
     blue      = "rgb(89b4fa)",
-    teal      = "rgb(0000ff)",
+    teal      = "rgb(94e2d5)",
     green     = "rgb(a6e3a1)",
     yellow    = "rgb(f9e2af)",
     peach     = "rgb(fab387)",
