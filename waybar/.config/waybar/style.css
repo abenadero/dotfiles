@@ -20,14 +20,15 @@ window#waybar {
 /*------- tooltips ------  */
 
 tooltip {
-    background-color: @mantle;
-    border: 1px solid @surface0;
+    background-color: alpha(@base, 0.85);
+    border: 01px solid @crust;
     border-radius: 8px;
-    padding: 6px 10px;
+    padding: 18px 28px;
 }
 
 tooltip label {
     color: @text;
+    font-size: 16px;
 }
 
 /*------- menus desplegables -------- */
@@ -61,10 +62,11 @@ menu menuitem:hover {
 #tray,
 #clock,
 #custom-power,
-#custom-ycal {
+#custom-calendar {
     color: @text;
     padding: 2px 6px;
-    margin: 2px 2px;    
+    margin: 2px 2px;
+        
 }
 
 #pulseaudio:hover,
@@ -75,8 +77,8 @@ menu menuitem:hover {
 #memory:hover,
 #tray:hover,
 #clock:hover,
-#custom-ycal:hover,
-#custom-power:hover {
+#custom-power:hover,
+#custom-calendar:hover {
     color: @rosewater;
     background-color: alpha(@teal, 0.55);
     border-radius: 8px;
@@ -122,7 +124,7 @@ menu menuitem:hover {
 
 /* ---------- clock ---------- */
 
-#clock, #custom-ycal {
+#clock, #custom-calendar {
     color: @text;
 	/*border-radius: 5px;
 	border: 0.5px solid @teal;
