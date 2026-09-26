@@ -1,6 +1,6 @@
-/* Catppuccin Mocha — waybar style
- * 
- */
+/* 
+* Waybar Style 
+*/
 
 /*--------- colores ----------*/
 @import url('/home/abenadero/.config/colors/catppuccin-mocha.css');
@@ -65,8 +65,7 @@ menu menuitem:hover {
 #custom-calendar {
     color: @text;
     padding: 2px 6px;
-    margin: 2px 2px;
-        
+    min-width: 20px;
 }
 
 #pulseaudio:hover,
@@ -81,14 +80,15 @@ menu menuitem:hover {
 #custom-calendar:hover {
     color: @rosewater;
     background-color: alpha(@teal, 0.55);
-    border-radius: 8px;
-    margin: 4px;
+    border-radius: 0px;
+    min-width: 20px;
+    transition: background-color 200ms ease;
 }
 
 .modules-right, .modules-left {
-	border-radius: 0px;
-	border: 0px solid @teal;
-	background-color: alpha(@teal, 0.35);
+    border-radius: 0px;
+    border: 0px solid @teal;
+    background-color: alpha(@teal, 0.35);
 }	
 /* ---------- workspaces ---------- */
 
@@ -118,19 +118,15 @@ menu menuitem:hover {
 }
 
 #workspaces button:hover {
-	color: @rosewater;
-	background-color: alpha(@teal, 0.35);
+    color: @rosewater;
+    background-color: alpha(@teal, 0.35);
 }
 
 /* ---------- clock ---------- */
 
 #clock, #custom-calendar {
     color: @text;
-	/*border-radius: 5px;
-	border: 0.5px solid @teal;
-	background-color: alpha(@teal, 0.25);
-	*/
-	font-weight: bold;
+    font-weight: bold;
 }
 /* ---------- pulseaudio ---------- */
 
@@ -201,5 +197,5 @@ menu menuitem:hover {
 }
 
 #custom-power {
-	font-size: 16px;
+    font-size: 16px;
 }

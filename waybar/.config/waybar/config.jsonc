@@ -47,7 +47,7 @@
     "spacing": 0
   },
   "pulseaudio#source": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}",
     "format-muted": "󰝟",
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%",
@@ -80,7 +80,7 @@
     "on-discharging": "notify-send -u normal 'Power Switch' Discharging",
     "on-charging": "notify-send -u normal 'Power Switch' Charging'"
     },
-    "format": "{icon} {capacity}%",
+    "format": "{icon}",
     "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "max-length": 25
   },
@@ -110,7 +110,7 @@
   	},
   },
   "network": {
-    "format-wifi": "󰖩 ",
+    "format-wifi": "󰖩",
     "format-ethernet": "󰈀 ",
     "format-disconnected": "󰖪",
     "tooltip-format-wifi": "{essid} - {signalStrength}%\n{ipaddr}",
