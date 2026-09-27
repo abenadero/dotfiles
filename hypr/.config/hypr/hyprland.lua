@@ -281,6 +281,8 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(menu .. " --show drun"))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen()) -- Toggle fullscreen
+hl.bind(mainMod .. " + Escape", hl.dsp.exec_cmd("wlogout -b 5 -c 8 -B 260 -T 260")) -- wlogout
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock")) -- hyprlock
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))
