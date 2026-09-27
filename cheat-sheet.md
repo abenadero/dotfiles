@@ -1,10 +1,9 @@
 #Instalación arch base
 
 ## Post-instalación arch
-sudo pacman -S flatpak waybar fastfetch hyprpaper man micro firefox 7zip unzip
-sudo pacman -S hyprtoolkit hyprpolkitagent hyprutils hyprwire hyprlang hyprshot hyprlock
-sudo pacman -S --needed base-devel git stow btop
-sudo pacman -S pavucontrol dmidecode nvmi-cli
+sudo pacman -Syu
+sudo pacman -R vim
+sudo pacman -S --needed gvim man flatpak waybar hyprtoolkit hyprpolkitagent hyprutils hyprwire hyprlang hyprshot hyprlock fastfetch micro firefox 7zip unzip pavucontrol dmidecode nvmi-cli base-devel git stow btop
 
 ## Instalar AUR
 git clone https://aur.archlinux.org/yay.git
