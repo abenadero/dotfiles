@@ -52,7 +52,7 @@
     "tooltip": true,
     "tooltip-format": "Volume: {volume}%",
     "format-icons": {
-      "headphone": "",
+      "headphone": "",
       "default": [
         "",
         "",
