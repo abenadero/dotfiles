@@ -1,9 +1,10 @@
+@import url(".config/colors/catppuccin-mocha.css");
+
 window {
     margin: 0px;
-    border: 2px solid #89b4fa;
+    border: 2px solid @mauve;
     border-radius: 8px;
-
-    background-color: rgba(30, 30, 46, 0.82);
+    background-color: alpha(@base, 0.85);
 }
 
 #input {
@@ -13,8 +14,8 @@ window {
     border: none;
     border-radius: 10px;
 
-    background-color: rgba(49, 50, 68, 0.85);
-    color: #cdd6f4;
+    background-color: alpha(@lavender, 0.25);
+    color: @text;
 }
 
 #inner-box {
@@ -38,14 +39,14 @@ window {
 }
 
 #entry:selected {
-    background-color: rgba(137, 180, 250, 0.35);
+    background-color: alpha(@lavender, 0.65);
 }
 
 #text {
-    color: #cdd6f4;
+    color: @teal;
 }
 
 #text:selected {
-    color: #ffffff;
+    color: @base;
 }
 
