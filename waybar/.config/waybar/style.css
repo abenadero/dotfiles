@@ -3,7 +3,7 @@
 */
 
 /*--------- colores ----------*/
-@import url('/home/abenadero/.config/colors/catppuccin-mocha.css');
+@import url('../colors/cybercat-mocha/cybercat-mocha.css');
 
 /*------- general -------*/
 
@@ -142,7 +142,7 @@ menu menuitem:hover {
 /* ---------- battery ---------- */
 
 #battery {
-    color: @green;
+    color: @neon-mint;
 }
 
 #battery.charging {
@@ -188,7 +188,7 @@ menu menuitem:hover {
 }
 
 #tray > .needs-attention {
-    background-color: @red;
+    background-color: @neon-red;
     border-radius: 8px;
 }
 

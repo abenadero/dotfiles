@@ -1,111 +1,111 @@
+
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
-    "type": "file",
-    "source": "~/.config/assets/Characters/chibicat-laptop-ascii-art.txt",
-    "color": {"1": "38;2;181;255;223"},
-    "width": 65,
-    "height": 35,
+    "type": "kitty-icat",
+    "source": "~/.config/fastfetch/ordis/ordis.gif",
+    "width": 20,
+    "height": 10,
     "padding": {
-        "top": 0,
-	"bottom": 0,
-	"right": 2,
-	"left": 2
+      "top": 5,
+      "bottom": 0,
+      "right": 2,
+      "left": 1
     }
   },
   "display": {
     "separator": "  ",
     "color": {
-        "keys": "38;2;109;44;199",
-        "title": "38;2;9;222;144"	
-    },
+      "keys": "#ADC7FF", // Pastel Blue
+    }
   },
   "modules": [
     "break",
     "break",
-    "break",
-    "break",
     {
-	"type": "colors",
-	"key": "╭─",
-	"padding-left": 2,
-	"symbol": "circle"
+      "type": "colors",
+      "key": "╭─",
+      "paddingLeft": 2,
+      "symbol": "circle",
+      "block": {
+          "range": [0, 7]
+      },
+      "brightness": "normal"
     },
     {
-	"type": "custom",
-	"key": "│",
-	"format": ""
+      "type": "custom",
+      "key": "│",
+      "format": ""
     },
     {
-	"type": "os",
-        "key": "├ ",
-	"outputColor": "38;2;105;255;201"
+      "type": "os",
+      "key": "├ ",
+      "outputColor": "#B5FFE2" // Mint 
     },
     {
-	"type": "kernel",
-	"key": "├ ",
-	"outputColor": "38;2;105;255;201"
+      "type": "kernel",
+      "key": "├ ",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "packages",
-	"key": "├ ",
-	"outputColor": "38;2;105;255;201"
+      "type": "shell",
+      "key": "├ 󱆃",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "shell",
-	"key": "├ 󱆃",
-	"outputColor": "38;2;105;255;201"
+      "type": "de",
+      "key": "├ 󰹑",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "de",
-	"key": "├ 󰹑",
-	"outputColor": "38;2;105;255;201"
+      "type": "wm",
+      "key": "├ 󱂬",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "wm",
-	"key": "├ 󱂬",
-	"outputColor": "38;2;105;255;201"
+      "type": "terminal",
+      "key": "├ ",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "terminal",
-	"key": "├ ",
-	"outputColor": "38;2;105;255;201"
+      "type": "host",
+      "key": "├ 󰟀",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "host",
-	"key": "├ 󰟀",
-	"outputColor": "38;2;105;255;201"
+      "type": "cpu",
+      "key": "├ ",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "cpu",
-	"key": "├ ",
-	"outputColor": "38;2;105;255;201"
+      "type": "gpu",
+      "key": "├ 󱤓",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "gpu",
-	"key": "├ 󱤓",
-	"outputColor": "38;2;105;255;201"
+      "type": "memory",
+      "key": "├ ",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "memory",
-	"key": "├ ",
-	"outputColor": "38;2;105;255;201"
+      "type": "disk",
+      "key": "├ 󰋊",
+      "outputColor": "#B5FFE2"
     },
     {
-	"type": "disk",
-	"key": "├ 󰋊",
-	"outputColor": "38;2;105;255;201"
+      "type": "custom",
+      "key": "│",
+      "format": ""
     },
     {
-	"type": "custom",
-	"key": "│",
-	"format": ""
-    },
-    {
-	"type": "colors",
-	"key": "╰─",
-	"padding-left": 2,
-	"symbol": "circle"
+      "type": "colors",
+      "key": "╰─",
+      "paddingLeft": 2,
+      "symbol": "circle",
+      "block": {
+          "range": [8, 15]
+      },
+      "brightness": "light"
     },
     "break",
     "break"

@@ -91,7 +91,7 @@ hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 -----------------------
 
 -- Colores --
-local colors = require("/home/abenadero/.config/colors/catppuccin-mocha.lua")
+local colors = require("../colors/cybercat-mocha/hyprland/cybercat-mocha.lua")
 
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({    
