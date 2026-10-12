@@ -20,6 +20,6 @@
 }
 {
     "label" : "logout",
-    "action" : "hyprctl dispatch exit",
+    "action" : "hyprshutdown",
     "text" : "Cerrar sesión"
 }
