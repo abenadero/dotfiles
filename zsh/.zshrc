@@ -16,7 +16,7 @@ compinit
 # Personalized PROMPT
 setopt PROMPT_SUBST
 
-PROMPT=$'%F{10}%B%n::%m%b ➜ %F{11}%~\n%F{6}❯%f '
+PROMPT=$'%F{10}%B%n::%m%b ➜ %F{11}%~\n%f> '
 
 # Sugerencias basadas en el historial
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
@@ -24,3 +24,6 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Resaltado de sintaxis
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Keybinds
+source .zshkeybinds

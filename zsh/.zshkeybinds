@@ -1,0 +1,127 @@
+# Editor de línea ZLE con selección estilo VS Code
+
+# ---------------------------------------------
+# Navegación
+# ---------------------------------------------
+
+bindkey '^[[3~' delete-char       # Suprimir
+bindkey '^[[H' beginning-of-line  # Inicio
+bindkey '^[[F' end-of-line        # Fin
+
+# Ctrl + flechas: navegar por palabras
+bindkey '^[[1;5D' backward-word
+bindkey '^[[1;5C' forward-word
+
+# ---------------------------------------------
+# Selección de texto
+# ---------------------------------------------
+
+# Iniciar selección si todavía no está activa
+function _selection_start() {
+    if (( ! REGION_ACTIVE )); then
+        MARK=$CURSOR
+        REGION_ACTIVE=1
+    fi
+}
+
+# Shift + Derecha
+function _select_forward_char() {
+    _selection_start
+    zle forward-char
+}
+
+# Shift + Izquierda
+function _select_backward_char() {
+    _selection_start
+    zle backward-char
+}
+
+# Ctrl + Shift + Derecha
+function _select_forward_word() {
+    _selection_start
+    zle forward-word
+}
+
+# Ctrl + Shift + Izquierda
+function _select_backward_word() {
+    _selection_start
+    zle backward-word
+}
+
+# Registrar widgets
+zle -N _select_forward_char
+zle -N _select_backward_char
+zle -N _select_forward_word
+zle -N _select_backward_word
+
+# Asociar teclas
+bindkey '^[[1;2C' _select_forward_char
+bindkey '^[[1;2D' _select_backward_char
+bindkey '^[[1;6C' _select_forward_word
+bindkey '^[[1;6D' _select_backward_word
+
+# Resaltado visual de la selección
+zle_highlight+=(region:standout)
+
+# ---------------------------------------------
+# Reemplazar y borrar selección
+# ---------------------------------------------
+
+# Eliminar la región seleccionada
+function _selection_delete() {
+    if (( REGION_ACTIVE )); then
+        zle kill-region
+        REGION_ACTIVE=0
+    else
+        zle backward-delete-char
+    fi
+}
+
+# Backspace
+zle -N _selection_delete
+bindkey '^?' _selection_delete
+
+# Suprimir: borrar selección o carácter siguiente
+function _selection_delete_forward() {
+    if (( REGION_ACTIVE )); then
+        zle kill-region
+        REGION_ACTIVE=0
+    else
+        zle delete-char
+    fi
+}
+
+zle -N _selection_delete_forward
+bindkey '^[[3~' _selection_delete_forward
+
+# Sustituir selección al escribir
+function _selection_self_insert() {
+    if (( REGION_ACTIVE )); then
+        zle kill-region
+        REGION_ACTIVE=0
+    fi
+
+    zle .self-insert
+}
+
+zle -N self-insert _selection_self_insert
+
+# ---------------------------------------------
+# Cancelar selección al navegar
+# ---------------------------------------------
+
+function _selection_move_left() {
+    REGION_ACTIVE=0
+    zle backward-char
+}
+
+function _selection_move_right() {
+    REGION_ACTIVE=0
+    zle forward-char
+}
+
+zle -N _selection_move_left
+zle -N _selection_move_right
+
+bindkey '^[[D' _selection_move_left
+bindkey '^[[C' _selection_move_right
