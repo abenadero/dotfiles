@@ -2,7 +2,7 @@
 
 # ---------- colors ----------
 
-colors_file="$HOME/.config/colors/catppuccin-mocha.css"
+colors_file="$HOME/.config/colors/cybercat-mocha/cybercat-mocha.css"
 
 get_color() {
     awk -v name="$1" '
