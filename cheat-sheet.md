@@ -3,7 +3,7 @@
 ## Post-instalación arch
 sudo pacman -Syu
 sudo pacman -R vim
-sudo pacman -S --needed gvim man flatpak waybar hyprtoolkit hyprpolkitagent hyprutils hyprwire hyprlang hyprshot hyprlock hyprshutdown fastfetch micro firefox 7zip unzip pavucontrol dmidecode nvmi-cli base-devel git stow btop
+sudo pacman -S --needed gvim man flatpak waybar hyprtoolkit hyprpolkitagent hyprutils hyprwire hyprlang hyprshot hyprlock hyprshutdown fastfetch micro firefox 7zip unzip pavucontrol dmidecode nvmi-cli base-devel git stow btop inetutils
 
 ## Instalar AUR
 git clone https://aur.archlinux.org/yay.git
