@@ -1,38 +1,52 @@
-/* Cybercat Mocha — Derived from Catppuccin Mocha */
+ /* Cybercat Mocha */
 
-/* Catppuccin Mocha — original palette */
-@define-color text      #cdd6f4;
-@define-color subtext1  #bac2de;
-@define-color subtext0  #a6adc8;
-@define-color overlay2  #9399b2;
-@define-color overlay1  #7f849c;
-@define-color overlay0  #6c7086;
-@define-color surface2  #585b70;
-@define-color surface1  #45475a;
-@define-color surface0  #313244;
-@define-color base      #1e1e2e;
-@define-color mantle    #181825;
-@define-color crust     #11111b;
+/* Neutrals and surfaces */
+@define-color crust             #11111b;
+@define-color mantle            #181825;
+@define-color base              #1e1e2e;
+@define-color surface0          #313244;
+@define-color surface1          #45475a;
+@define-color surface2          #585b70;
+@define-color overlay0          #6c7086;
+@define-color overlay1          #7f849c;
+@define-color overlay2          #9399b2;
+@define-color subtext0          #a6adc8;
+@define-color subtext1          #bac2de;
+@define-color text              #cdd6f4;
 
-@define-color mauve     #cba6f7;
-@define-color lavender  #b4befe;
-@define-color blue      #89b4fa;
-@define-color teal      #94e2d5;
-@define-color green     #a6e3a1;
-@define-color yellow    #f9e2af;
-@define-color peach     #fab387;
-@define-color red       #f38ba8;
-@define-color rosewater #f5e0dc;
+/* Reds and pinks */
+@define-color neon-red          #ff5277;
+@define-color red               #f38ba8;
+@define-color maroon            #eba0ac;
+@define-color rosewater         #f5e0dc;
+@define-color flamingo          #f2cdcd;
+@define-color pink              #f5c2e7;
 
-/* Cybercat Mocha — additional colors */
-@define-color mint            #B5FFE2;
-@define-color neon-mint       #54FFB7;
-@define-color neon-red        #FF5277;
-@define-color neon-green      #34F86C;
-@define-color pastel-green    #75FFA5;
-@define-color neon-amber      #FFD166;
-@define-color electric-indigo #7287FD;
-@define-color pastel-blue     #ADC7FF;
-@define-color neon-violet     #D078FF;
-@define-color pastel-pink     #f5c2e7;
-@define-color neon-cyan       #00FFCC;
+/* Oranges and yellows */
+@define-color peach             #fab387;
+@define-color neon-amber        #ffd166;
+@define-color yellow            #f9e2af;
+
+/* Greens and mint */
+@define-color neon-green        #34f86c;
+@define-color pastel-green      #75ffa5;
+@define-color green             #a6e3a1;
+@define-color neon-mint         #54ffb7;
+@define-color mint              #b5ffe2;
+
+/* Cyans and turquoise */
+@define-color neon-cyan         #00ffcc;
+@define-color teal              #94e2d5;
+@define-color sky               #89dceb;
+
+/* Blues */
+@define-color sapphire          #74c7ec;
+@define-color blue              #89b4fa;
+@define-color pastel-blue       #c4e2ff;
+@define-color electric-indigo   #7287fd;
+
+/* Purples */
+@define-color lavender          #b4befe;
+@define-color mauve             #cba6f7;
+@define-color neon-violet       #d078ff;
+

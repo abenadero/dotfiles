@@ -1,0 +1,54 @@
+GIMP Palette
+Name: Cybercat Mocha
+Columns: 6
+#
+
+# Neutrals and surfaces
+ 17  17  27 Crust
+ 24  24  37 Mantle
+ 30  30  46 Base
+ 49  50  68 Surface0
+ 69  71  90 Surface1
+ 88  91 112 Surface2
+108 112 134 Overlay0
+127 132 156 Overlay1
+147 153 178 Overlay2
+166 173 200 Subtext0
+186 194 222 Subtext1
+205 214 244 Text
+
+# Reds and pinks
+255  82 119 Neon Red
+243 139 168 Red
+235 160 172 Maroon
+245 224 220 Rosewater
+242 205 205 Flamingo
+245 194 231 Pink
+
+# Oranges and yellows
+250 179 135 Peach
+255 209 102 Neon Amber
+249 226 175 Yellow
+
+# Greens and mint
+ 52 248 108 Neon Green
+117 255 165 Pastel Green
+166 227 161 Green
+ 84 255 183 Neon Mint
+181 255 226 Mint
+
+# Cyans and turquoise
+  0 255 204 Neon Cyan
+148 226 213 Teal
+137 220 235 Sky
+
+# Blues
+116 199 236 Sapphire
+137 180 250 Blue
+196 226 255 Pastel Blue
+114 135 253 Electric Indigo
+
+# Purples
+180 190 254 Lavender
+203 166 247 Mauve
+208 120 255 Neon Violet
